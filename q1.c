@@ -1,29 +1,19 @@
 #include<stdio.h>
-#include<conio.h>
 
 void main()
 {
-
-
-int a,b;
-
-printf("Enter a value for A:");
-scanf("%d",&a);
-
-printf("Enter a value for B:");
-scanf("%d",&b);
-
-if(a<b)
-
-
-{
-	printf("A is minimum");
+	int n,i=1,sum=0;
+	printf("Enter value n  :");
+	scanf("%d",&n);
 	
+	while(i<=n)
+	{
+		printf("sum=%d+%d;sum=%d\n",sum,i,sum+1);
+		sum=sum+i;
+		i++;
+		
+	}
+	printf("sum is %d",sum);
 }
 
-else
-{
-	printf("B is minimum");
-}
 
-}

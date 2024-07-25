@@ -1,25 +1,18 @@
 #include<stdio.h>
-#include<conio.h>
 
 void main()
- 
 {
-	int A;
-	printf("enter any number:");
-	scanf("%d",&A);
+	int n,i=1,sum=1;
+	printf("Enter value n  :");
+	scanf("%d",&n);
 	
-	
-	if(A<0)
+	while(i<=n)
 	{
-		printf("this number is negetive");
+		printf("sum=%d*%d;sum=%d\n",sum,i,sum*1);
+		sum=sum*i;
+		i++;
+		
 	}
-	else if(A>0)
-	{
-		printf("this number is positive");	
-	}
-	else
-	{
-		printf("this number is neutral");
-	}
-
+	printf("sum is %d",sum);
 }
+
